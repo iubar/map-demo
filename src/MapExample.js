@@ -111,13 +111,13 @@ export default class MapExample extends React.Component {
             if (region) {
                 let camera = {
                     center: {
-                       latitude: region.latitude,
-                       longitude: region.longitude,
+                       latitude: 45.4627124,
+                       longitude: 9.1076924,
                    },
                    pitch: 15,
                    heading: 20,
                    altitude: 10, // Only on iOS MapKit, in meters. The property is ignored by Google Maps.                
-                   zoom: 1
+                   zoom: 20
                 };
                 console.log('animateCamera: ' + JSON.stringify(region));
                 this.map.animateCamera(camera, 5000);
@@ -141,8 +141,8 @@ export default class MapExample extends React.Component {
                     zoomTapEnabled={false}
                     zoomEnabled={false}
                     rotateEnabled={false}
-                    minZoomLevel={ 7 }
-                    maxZoomLevel={ 8 }>
+                    minZoomLevel={ 1 }
+                    maxZoomLevel={ 10 }>
                     {this.state.marker ? (
                         <MapView.Marker coordinate={this.state.marker}/>
                     ) : null}

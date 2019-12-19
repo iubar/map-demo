@@ -16,3 +16,10 @@ script:
   - expo doctor --non-interactive
   - expo login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}
   - expo publish --non-interactive --quiet --release-channel default
+notifications:
+  email:
+    recipients:
+      - ${EMAIL_BORGO}
+      - ${EMAIL_DANIELE}
+    on_success: change  # options: [always|never|change] default: changes
+    on_failure: always  # options: [always|never|change] default: always
