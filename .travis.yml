@@ -15,5 +15,5 @@ script:
   - yarn list expo
   - echo 'Analysing app config...'
   - expo doctor --non-interactive
-  - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
-  - expo publish --non-interactive --quiet --release-channel ${RELEASE_CHANNEL}
+  - expo login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}
+  - expo publish --non-interactive --quiet --release-channel default
