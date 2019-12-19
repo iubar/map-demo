@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - node
+  - lts/*
+cache:
+  directories:
+    - ~/.npm
+before_script:
+  - npm install -g npm@latest
+script:
+  - echo 'Installing the dependencies...'
+  - yarn install --non-interactive
+  - expo --version # expo-cli version
+  - yarn list expo
+  - echo 'Analysing app config...'
+  - expo doctor --non-interactive
+  - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
+  - expo publish --non-interactive --quiet --release-channel ${RELEASE_CHANNEL}
