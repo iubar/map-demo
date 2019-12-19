@@ -119,7 +119,7 @@ export default class MapExample extends React.Component {
                    altitude: 10, // Only on iOS MapKit, in meters. The property is ignored by Google Maps.                
                    zoom: 20
                 };
-                console.log('animateCamera: ' + JSON.stringify(region));
+                console.log('animateCamera: ' + JSON.stringify(camera));
                 this.map.animateCamera(camera, 5000);
             }
         }
