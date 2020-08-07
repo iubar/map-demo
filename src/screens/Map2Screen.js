@@ -4,7 +4,7 @@ import MapView from 'react-native-maps';
 import * as Permissions from 'expo-permissions';
 import * as Location from 'expo-location';
 
-export default class MapExample extends React.Component {
+export default class Map2Screen extends React.Component {
 
     state = {
         region: { latitude: 90, longitude: 0, latitudeDelta: 0.0922, longitudeDelta: 0.0421 },
