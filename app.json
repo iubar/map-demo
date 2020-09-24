@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Map Test",
-    "slug": "map-test",
+    "name": "Map Demo",
+    "slug": "map-demo",
     "privacy": "public",
     "platforms": [
       "ios",

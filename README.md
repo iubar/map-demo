@@ -1,10 +1,10 @@
 # map-test
 
-[![Build Status](https://travis-ci.org/iubar/map-test.svg?branch=master)](https://travis-ci.org/iubar/map-test)
+[![Build Status](https://travis-ci.org/iubar/map-demo.svg?branch=master)](https://travis-ci.org/iubar/map-demo)
 
 A simple app to test Map component
 
-Live version: https://snack.expo.io/@git/github.com/iubar/map-test
+Live version: https://snack.expo.io/@git/github.com/iubar/map-demo
 
 ### Notes
 
