@@ -7,10 +7,6 @@ import Map3Screen from './src/screens/Map3Screen';
 import { NavigationContainer, DarkTheme as DarkThemeNav, DefaultTheme as DefaultThemeNav} from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
-// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-// const Tab = createMaterialTopTabNavigator(); // BUG HERE: return an error
-// ...so I use..
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const Tab = createBottomTabNavigator();
 
