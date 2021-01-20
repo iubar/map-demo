@@ -1,6 +1,6 @@
 # map-test
 
-[![Build Status](https://travis-ci.org/iubar/map-demo.svg?branch=master)](https://travis-ci.org/iubar/map-demo)
+[![Build Status](https://travis-ci.com/iubar/map-demo.svg?branch=master)](https://travis-ci.com/iubar/map-demo)
 
 A simple app to test Map component
 
