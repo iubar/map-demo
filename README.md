@@ -1,6 +1,7 @@
-# map-test
+# map-demo
 
 [![Build Status](https://app.travis-ci.com/iubar/map-demo.svg?branch=master)](https://app.travis-ci.com/github/iubar/map-demo)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6a80ca76eb8242d7a7d8c49f31e4a2aa)](https://www.codacy.com/gh/iubar/map-demo/dashboard)
 
 A simple app to test Map component
 
