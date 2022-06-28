@@ -1,19 +1,22 @@
+dist: focal # https://docs.travis-ci.com/user/reference/focal/
 language: node_js
 node_js:
   - lts/*
 cache:
   directories:
     - ~/.npm
-before_script:
+before_install:
   - npm install -g npm@latest
   - npm install -g expo-cli
-script:
-  - echo 'Installing the dependencies...'
+install:
   - yarn install --non-interactive
+before_script:
   - expo --version # expo-cli version
   - yarn list expo
   - echo 'Analysing app config...'
   - expo doctor --non-interactive
+script: true
+after_script:
   - expo login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}
   - expo publish --non-interactive --quiet --release-channel default
 notifications:
