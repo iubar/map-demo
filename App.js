@@ -20,7 +20,7 @@ export default class App extends React.Component {
 			<NavigationContainer>
 				<Tab.Navigator>
 					<Tab.Screen
-						name="Map1"
+						name="Map 1"
 						component={Map1Screen}
 						options={{
 							tabBarLabel: 'Markers',
@@ -30,7 +30,7 @@ export default class App extends React.Component {
 						}}
 					/>
 					<Tab.Screen
-						name="Map2"
+						name="Map 2"
 						component={Map2Screen}
 						options={{
 							tabBarLabel: 'Events',
@@ -41,7 +41,7 @@ export default class App extends React.Component {
 						}}
 					/>
 					<Tab.Screen
-						name="Map3"
+						name="Map 3"
 						component={Map3Screen}
 						options={{
 							tabBarLabel: 'Clusters',

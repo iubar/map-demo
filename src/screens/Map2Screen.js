@@ -213,7 +213,7 @@ export default class Map2Screen extends React.Component {
 				<TouchableOpacity
 					onPress={() => this.setCamera()}
 					style={[styles.bubble, styles.button]}>
-					<Text>Set Camera</Text>
+					<Text>Set Camera (heading + 10)</Text>
 				</TouchableOpacity>
 			</View>
 		);
