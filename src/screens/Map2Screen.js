@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, View, Text, Button, Alert } from 'react-native';
 import MapView from 'react-native-maps';
+import { Marker } from 'react-native-maps'
 import * as Location from 'expo-location';
 
 export default class Map2Screen extends React.Component {
@@ -35,10 +36,13 @@ export default class Map2Screen extends React.Component {
 		if (this.state.gpsPermission) {
 			let region = await this.getLocationAsync();
 			if (region) {
+				console.log('latitude: ' + region.latitude);
+				console.log('longitude: ' + region.longitude);
 				this.setState({
 					region: region,
 					marker: { latitude: region.latitude, longitude: region.longitude },
 				});
+				
 			} else {
 				console.error('region: ' + JSON.stringify(region));
 			}
@@ -191,7 +195,7 @@ export default class Map2Screen extends React.Component {
 					rotateEnabled={false}
 					minZoomLevel={1}
 					maxZoomLevel={10}>
-					{this.state.marker ? <MapView.Marker coordinate={this.state.marker} /> : null}
+					{this.state.marker ? <Marker coordinate={this.state.marker} /> : null}
 				</MapView>
 
 				<View style={{ marginHorizontal: 40, marginVertical: 10 }}>
