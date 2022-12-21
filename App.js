@@ -1,6 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
-import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import Map1Screen from './src/screens/Map1Screen';
 import Map2Screen from './src/screens/Map2Screen';
 import Map3Screen from './src/screens/Map3Screen';
