@@ -12,13 +12,11 @@ describe('<App />', () => {
 		const tree = renderer.create(<App />).toJSON();
 
 		// see https://github.com/callstack/react-native-testing-library/issues/398
-		 await act(async () => {
+		await act(async () => {
 			expect(tree).toMatchSnapshot();
-		   })		
-	});  
+		});
+	});
 });
- 
-
 
 /*
 describe('<App /> Basics', () => {
@@ -31,11 +29,3 @@ describe('<App /> Basics', () => {
   });
 })
 */
-
-
-
-
-
-
- 
-
