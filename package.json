@@ -21,7 +21,7 @@
     "@react-native-masked-view/masked-view": "0.2.8",
     "@react-navigation/bottom-tabs": "^6.5.2",
     "@react-navigation/native": "^6.1.1",
-    "expo": "^47.0.8",
+    "expo": "^47.0.12",
     "expo-location": "~15.0.1",
     "expo-updates": "~0.15.6",
     "react": "18.1.0",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.2.0",
     "babel-preset-expo": "~9.2.2",
-    "eslint": "^8.29.0",
+    "eslint": "^8.31.0",
     "jest": "^27.0.0",
     "react-test-renderer": "18.1.0",	
     "jest-expo": "^47.0.1",
