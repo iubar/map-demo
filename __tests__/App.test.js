@@ -1,20 +1,18 @@
 import React from 'react';
-import renderer, {act} from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import App from '../App';
- 
 
- 
 describe('<App /> Basics', () => {
 	it('has 1 child', () => {
-	  let tree
-	 // renderer.act(()=>{
-		 tree = renderer.create(<App />)
-	//  })
-	  expect(tree).toMatchSnapshot();
+		let tree;
+		// renderer.act(()=>{
+		tree = renderer.create(<App />);
+		//  })
+		expect(tree).toMatchSnapshot();
 	});
-  });
+});
 
- /*
+/*
 describe('<App />', () => {
  
 	it('renders correctly', async () => {
@@ -27,7 +25,3 @@ describe('<App />', () => {
 	});
 });
  */
-
- 
-
- 
