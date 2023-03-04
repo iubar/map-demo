@@ -2,6 +2,11 @@
 * @see https://react-native-community.github.io/async-storage/docs/advanced/jest
 */
 
+jest.mock('expo-font');
+jest.mock('expo-asset');
+
+import 'setimmediate';
+
 //import { enableFetchMocks } from 'jest-fetch-mock'
 //enableFetchMocks()
 
