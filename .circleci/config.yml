@@ -30,5 +30,7 @@ jobs:
       - run:
           name: Publish
           command: |
-            npx eas-cli login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}  
-            npx eas-cli update --branch master
+            export CI=1
+            npx eas diagnostics
+            #npx expo-cli login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}  
+            npx eas-cli update --non-interactive --branch master
