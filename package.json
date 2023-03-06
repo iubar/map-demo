@@ -12,14 +12,13 @@
     "test-update": "jest --updateSnapshot  --coverage=false",
     "lint": "eslint --color --ext .js,.jsx src App.js",
     "lint-fix": "npm run lint -- --fix",
-    "lint-quiet": "npm run lint -- --quiet",    
+    "lint-quiet": "npm run lint -- --quiet",
     "format": "prettier \"src/**/*{.js,.jsx}\" \"__tests__/**/*{.js,.jsx}\" App.js",
     "format-write": "npm run format -- --write",
     "format-check": "npm run format -- --check",
     "clean-node": "rimraf node_modules"
   },
   "dependencies": {
-    "@react-native-masked-view/masked-view": "0.2.8",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "^6.1.6",
     "expo": "^48.0.5",
