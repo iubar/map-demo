@@ -4,15 +4,15 @@ import App from '../App';
 
 describe('<App />', () => {
 	it('has 1 child', () => {
-		const tree =   renderer.create(<App />).toJSON();		
-		expect(tree.children.length).toBe(1);		 
-	});	
+		const tree = renderer.create(<App />).toJSON();
+		expect(tree.children.length).toBe(1);
+	});
 	it('matches snapshot and renders correctly', () => {
 		let tree = renderer.create(<App />);
 		expect(tree).toMatchSnapshot();
 	});
 });
- 
+
 // An old example:
 // see https://github.com/callstack/react-native-testing-library/issues/398
 //	await renderer.act(async () => {
