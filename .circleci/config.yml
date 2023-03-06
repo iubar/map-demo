@@ -32,5 +32,6 @@ jobs:
           command: |
             export CI=1
             npx eas-cli diagnostics
-            #npx expo-cli login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}  
+            npx eas-cli doctor
+            # npx expo-cli login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}  
             npx eas-cli update --non-interactive --branch master --message "New version"

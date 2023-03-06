@@ -12,6 +12,7 @@
     "test-update": "jest --updateSnapshot  --coverage=false",
     "lint": "eslint --color --ext .js,.jsx src App.js",
     "lint-fix": "npm run lint -- --fix",
+    "lint-quiet": "npm run lint -- --quiet",    
     "format": "prettier \"src/**/*{.js,.jsx}\" \"__tests__/**/*{.js,.jsx}\" App.js",
     "format-write": "npm run format -- --write",
     "format-check": "npm run format -- --check",
@@ -44,7 +45,7 @@
     "jest-environment-jsdom": "^29.4.3",
     "jest-expo": "^48.0.1",
     "prettier": "^2.8.4",
-    "react-test-renderer": "18.1.0",
+    "react-test-renderer": "^18.2.0",
     "rimraf": "^4.3.0"
   }
 }
