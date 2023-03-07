@@ -31,5 +31,4 @@ jobs:
           name: Publish
           command: |
             npx eas-cli diagnostics
-            # npx expo-cli doctor # not supported in the local CLI
             npx eas-cli update --non-interactive --branch master --message "New version"
