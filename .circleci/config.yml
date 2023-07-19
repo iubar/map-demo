@@ -15,7 +15,7 @@ jobs:
           name: Install Dependencies
           command: |
             npm ci
-            npx eas-cli diagnostics
+            npx expo-env-info
             npx expo-doctor
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
@@ -33,4 +33,5 @@ jobs:
       - run:
           name: Publish
           command: |
-            npx eas-cli update --non-interactive --branch master --message "New version"
+            npx eas-cli diagnostics
+            npx eas-cli update --non-interactive --branch master --message "New version" 
