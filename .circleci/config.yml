@@ -13,7 +13,10 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Install Dependencies
-          command: npm ci
+          command: |
+            npm ci
+            npx eas-cli diagnostics
+            npx expo-doctor
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
@@ -30,5 +33,4 @@ jobs:
       - run:
           name: Publish
           command: |
-            npx eas-cli diagnostics
             npx eas-cli update --non-interactive --branch master --message "New version"
