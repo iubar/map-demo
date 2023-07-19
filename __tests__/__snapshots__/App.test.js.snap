@@ -23,7 +23,6 @@ exports[`<App /> matches snapshot and renders correctly 1`] = `
     <RNSScreen
       activityState={2}
       collapsable={false}
-      forwardedRef={[Function]}
       gestureResponseDistance={
         {
           "bottom": -1,
@@ -32,6 +31,11 @@ exports[`<App /> matches snapshot and renders correctly 1`] = `
           "top": -1,
         }
       }
+      sheetAllowedDetents="large"
+      sheetCornerRadius={-1}
+      sheetExpandsWhenScrolledToEdge={true}
+      sheetGrabberVisible={false}
+      sheetLargestUndimmedDetent="all"
       style={
         {
           "bottom": 0,
